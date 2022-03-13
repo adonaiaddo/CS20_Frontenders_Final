@@ -12,6 +12,11 @@ h1 {
         padding-top: 100px;
         padding-bottom: 100px;
 }
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 /* 
 .header {
     min-height: 100vh;
@@ -178,11 +183,47 @@ nav .fa{
     text-align: left;
     padding-top: 100px;
 }
+form {
+    display: inline-block;
+}
+.content .item {
+    text-align: center;
+}
+.content .centerimg {
+    bottom: 50px;
+    left: 420px;
+}
+.content .center_img {
+    bottom: 50px;
+    left: 450px;
+    width: 40%;
+}
+
+.content .yo {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.content h2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
 .content h1{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+.content .toCenter {
+    text-align: center;
+}
+.tableCenter {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content img{
