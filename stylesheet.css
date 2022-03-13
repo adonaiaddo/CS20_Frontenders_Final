@@ -166,6 +166,9 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+    .content img{
+        width: 50%;
+    }
 }
 
 /* section of sample speeches in home */
