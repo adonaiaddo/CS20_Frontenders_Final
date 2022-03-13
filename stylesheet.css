@@ -3,6 +3,15 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+h1 {
+    
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+}
 /* 
 .header {
     min-height: 100vh;
@@ -174,11 +183,13 @@ nav .fa{
 }
 
 .content img{
-    width: 450px;
-    display: block;
+    width: 350px; 
+    /* display: block; */
     position:relative;
-    left: 900px;
+    left: 800px;
     bottom: 250px;
+    padding-top: 100px;
+    /* padding-right: 100px; */
     /* float:inline-start */
 }
 .About h1{
