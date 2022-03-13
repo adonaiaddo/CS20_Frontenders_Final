@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Our Art Museum </title>
+          
+        <title>Exhibition: Home</title>
         
         <meta charset = "utf-8" name = "viewport" content = "with=device-width,
          initial-scale=1.">
+         <meta name = "keywords" content = "exhibits, museum, pictures"> 
         <link rel = "stylesheet" href = "stylesheet.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -12,8 +14,77 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- add an icon to the tab -->
+        <style type="text/css">
+        #slides-wrapper{height:320px;}
+        #slide img {
+            /* text-align: center; */
+            margin-left: auto;
+            margin-right: auto;
+            left: 370px;
+            bottom: 100px;
+
+        }
+        /* .center{
+                  
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 50%;
+                  
+                  
+        }
         
+        .box {
+          
+          display: flex; flex-grow: 2; flex-direction: row; 
+           padding: 0.3rem;
+        }
+        
+        .home {
+            
+            text-align: center; font-size: 2.5rem; width: 3rem; padding: 2rem,1rem; flex-grow: 1; 
+            margin:0.375rem; 
+        } */
+            
+        </style> 
+
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>    
+
+        <script>
+  
+            images = ["img7.jpg","img8.jpg","img9.jpg"];
+            var currIndex = 0;
+            
+            function fadeoutImg(){
+                
+               $("#slide img").fadeOut(3000, fadeinImg);
+               
+            }
+            
+            function fadeinImg(){
+           
+                  
+                currIndex++; 
+                currIndex= currIndex== images.length?0: currIndex; 
+                $("#slide img").attr("src", "images/" + images[currIndex]);
+                $("#slide img").fadeIn(3000, fadeoutImg);
+            }
+            
+            
+              
+            $(document).ready(function(){
+                
+              fadeoutImg();
+                  
+            }) 
+        
+        
+       </script>
     </head>
+    
     <body>
             <!-- navbar-->
         <section class ="header">
@@ -35,112 +106,36 @@
             </nav>
         </section>
 
+        <h1>Explore various wonders!</h1>
 
 
                                     <!-- header -->
                         <!-- Page content -->
         <section class = "content">
-            <p><b>Recent Inspirational Speeches In SpeechX Community</b> <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Morbi leo urna molestie at elementum. Volutpat ac
-                tincidunt vitae semper quis lectus nulla at. Posuere 
-                sollicitudin aliquam ultrices sagittis orci a. Nisi quis 
-                eleifend quam adipiscing vitae. Aliquet enim tortor at auctor. 
-                Venenatis cras sed felis eget. Arcu cursus euismod quis viverra 
-                nibh. Posuere morbi leo urna molestie at. Massa eget egestas 
-                purus viverra accumsan in nisl. Sollicitudin ac orci phasellus
-                egestas tellus rutrum. Pellentesque eu tincidunt tortor aliquam. 
-                Vulputate eu scelerisque felis imperdiet proin fermentum leo.</p>
+            <!-- <nav> 
+                <div class = "box">
+                    <div class = "home">
+                        <a href = "exhibition_home.html">Home</a>
+                  </div>
+                  
+                  <div class = "home">
+                      <a href = "exhibit1.html">Exhibit1</a>
+                  </div>
+                  
+                  <div class = "home">
+                      <a href = "exhibit2.html">Exhibit2</a>
+                      
+                  </div>
+              </div>
+            </nav> -->
             
-            <img src = "logo.png">
+            
+                <div id='slide'>
+                    <img src="images/img7.jpg" class = "center" style="width:50%"/>
+                </div>
+            
+    
         </section>
-        <section class = "content">
-            <hr>
-            <p><b>Recent Inspirational Speeches In SpeechX Community</b> <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Morbi leo urna molestie at elementum. Volutpat ac
-                tincidunt vitae semper quis lectus nulla at. Posuere 
-                sollicitudin aliquam ultrices sagittis orci a. Nisi quis 
-                eleifend quam adipiscing vitae. Aliquet enim tortor at auctor. 
-                Venenatis cras sed felis eget. Arcu cursus euismod quis viverra 
-                nibh. Posuere morbi leo urna molestie at. Massa eget egestas 
-                purus viverra accumsan in nisl. Sollicitudin ac orci phasellus
-                egestas tellus rutrum. Pellentesque eu tincidunt tortor aliquam. 
-                Vulputate eu scelerisque felis imperdiet proin fermentum leo.</p>
-            
-            <img src = "logo.png">
-        </section>
-        <section class = "content">
-            <hr>
-            <p><b>Recent Inspirational Speeches In SpeechX Community</b> <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Morbi leo urna molestie at elementum. Volutpat ac
-                tincidunt vitae semper quis lectus nulla at. Posuere 
-                sollicitudin aliquam ultrices sagittis orci a. Nisi quis 
-                eleifend quam adipiscing vitae. Aliquet enim tortor at auctor. 
-                Venenatis cras sed felis eget. Arcu cursus euismod quis viverra 
-                nibh. Posuere morbi leo urna molestie at. Massa eget egestas 
-                purus viverra accumsan in nisl. Sollicitudin ac orci phasellus
-                egestas tellus rutrum. Pellentesque eu tincidunt tortor aliquam. 
-                Vulputate eu scelerisque felis imperdiet proin fermentum leo.</p>
-            
-            <img src = "logo.png">
-        </section>
-        <section class = "content">
-            <hr>
-            <p><b>Recent Inspirational Speeches In SpeechX Community</b> <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Morbi leo urna molestie at elementum. Volutpat ac
-                tincidunt vitae semper quis lectus nulla at. Posuere 
-                sollicitudin aliquam ultrices sagittis orci a. Nisi quis 
-                eleifend quam adipiscing vitae. Aliquet enim tortor at auctor. 
-                Venenatis cras sed felis eget. Arcu cursus euismod quis viverra 
-                nibh. Posuere morbi leo urna molestie at. Massa eget egestas 
-                purus viverra accumsan in nisl. Sollicitudin ac orci phasellus
-                egestas tellus rutrum. Pellentesque eu tincidunt tortor aliquam. 
-                Vulputate eu scelerisque felis imperdiet proin fermentum leo.</p>
-            
-            <img src = "logo.png">
-        </section>
-        <section class = "content">
-            
-            <p><b>Recent Inspirational Speeches In SpeechX Community</b> <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Morbi leo urna molestie at elementum. Volutpat ac
-                tincidunt vitae semper quis lectus nulla at. Posuere 
-                sollicitudin aliquam ultrices sagittis orci a. Nisi quis 
-                eleifend quam adipiscing vitae. Aliquet enim tortor at auctor. 
-                Venenatis cras sed felis eget. Arcu cursus euismod quis viverra 
-                nibh. Posuere morbi leo urna molestie at. Massa eget egestas 
-                purus viverra accumsan in nisl. Sollicitudin ac orci phasellus
-                egestas tellus rutrum. Pellentesque eu tincidunt tortor aliquam. 
-                Vulputate eu scelerisque felis imperdiet proin fermentum leo.</p>
-            
-            <img src = "logo.png">
-        </section>
-        <section class = "content">
-            <hr>
-            <p><b>Recent Inspirational Speeches In SpeechX Community</b> <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Morbi leo urna molestie at elementum. Volutpat ac
-                tincidunt vitae semper quis lectus nulla at. Posuere 
-                sollicitudin aliquam ultrices sagittis orci a. Nisi quis 
-                eleifend quam adipiscing vitae. Aliquet enim tortor at auctor. 
-                Venenatis cras sed felis eget. Arcu cursus euismod quis viverra 
-                nibh. Posuere morbi leo urna molestie at. Massa eget egestas 
-                purus viverra accumsan in nisl. Sollicitudin ac orci phasellus
-                egestas tellus rutrum. Pellentesque eu tincidunt tortor aliquam. 
-                Vulputate eu scelerisque felis imperdiet proin fermentum leo.</p>
-            
-            <img src = "logo.png">
-        </section>
-
                             <!-- footer  -->
 
 

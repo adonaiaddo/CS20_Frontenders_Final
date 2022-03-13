@@ -285,6 +285,10 @@ form {
 .footer p {
     padding-top: 20px;
 }
+.item form {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
 
 hr {
     background-color: #4D57E3;
