@@ -22,13 +22,17 @@
         span::after {
             padding-left: 5px;  
         }
-
+        input {
+            font-size: xx-large;
+        }
         input:invalid + span::after {
             content: '✖ There is no event on this date.';
+            font-size: xx-large
         }
 
         input:valid+span::after {
             content: '✓ There is an event on this date.';
+            font-size: xx-large;
         }
 
         .center{
@@ -84,52 +88,52 @@
               <div>
                   
                   <p>
-                      Teen Talk: Meet Teens Interested in the Arts<br>
+                      <b>Teen Talk: Meet Teens Interested <br> in the Arts</b><br>
                       Free Admission for All<br>
                       Tuesday, March 15, 2022<br>
                   </p>
-                  <img src="image1.jpg" style="width:25%">
+                  <img src="image1.jpg" style="width:40%">
               </div>
               
               <br>
               
               <div>
-                  
+                  <hr>
                   <p>
-                      Special Lecture: Concepts of Expressionism<br>
+                      <b>Special Lecture: Concepts of <br>Expressionism</b><br>
                       Guest Lecturer Featured!<br>
                       Wednesday, March 16, 2022<br>
                   </p>
-                  <img src="image2.jpg" style="width:30%; height:30%">
+                  <img src="image2.jpg" style="width:40%">
               </div>
               <br>
               <div>
-                  
+                  <hr>
                   <p>
-                      Dance Performance<br>
+                      <b>Dance Performance</b><br>
                       Featured in the Auditorium<br>
                       Thursday, March 17, 2022<br>
                   
                   </p>
-                  <img src="image3.jpg" style="width:30%; height:30%">
+                  <img src="image3.jpg" style="width:40%">
               </div>
               
               <br>
               <div>
-                  
+                  <hr>
                   <p>
-                      Special Arts and Crafts Workshop<br>
+                      <b>Special Arts and Crafts Workshop</b><br>
                       Free for Children Under 11<br>
                       Friday, March 18, 2022<br>
                   
                   </p>
-                  <img src="image4.jpg" style="width:30%; height:30%">
+                  <img src="image4.jpg" style="width:40%">
                   
               </div>
               <div class="item">
                     <form>
                        <label>
-                        <p>March Events: </p> 
+                        <p><b>March Events: </b></p> <br>
                         <input type="date" name="events" min="2022-03-15" max="2022-03-18" required pattern="\d{4}-\d{2}-\d{2}">
                         <span class="validity"></span>
                       </label>

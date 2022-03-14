@@ -3,7 +3,15 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+p b {
+    color: #4d57e3
+}
+p {
+    font-size: xx-large;
+}
+input {
+    font-size: xx-large;
+}
 h1 {
     
         width: 80%;
@@ -11,10 +19,12 @@ h1 {
         text-align: center;
         padding-top: 100px;
         padding-bottom: 100px;
+        color: #4d57e3;
 }
 h2 {
     text-align: center;
     padding-bottom: 10px;
+    color: #c9363c;
 }
 
 /* 
